@@ -142,6 +142,52 @@ nav{
           }}
     
 
+ @media screen and (max-width: 480px){
+
+        #name{
+            position:relative;
+            top:25%;
+            font-size: 13vw;
+            font-family:'Jost';
+            font-weight: normal;
+            margin-right:0;
+            cursor: default;
+            animation: nameanime 1s steps(12,end) 0.5s 1 normal both;
+            animation-delay:.2s;
+            white-space:nowrap;
+            overflow:hidden;
+            margin:0 auto;
+            padding-left: 5%;
+            
+        }
+        
+        @keyframes nameanime{
+            from{width: 0px;}
+            to{width: 740px;}
+          }
+        
+        #role{
+            position:relative;
+            top:25%;
+            font-size: 4.3vw;
+            font-family:'Jost';
+            font-weight: normal;
+            margin-right:0;
+            cursor: default;
+            animation: roleanime 1.5s steps(15,end) 0.5s 1 normal both;
+            animation-delay:1.4s;
+            white-space:nowrap;
+            overflow:hidden;
+            margin:0 auto;
+            padding-left:5%;
+            
+        }
+        @keyframes roleanime{
+            from{width: 0;}
+            to{width: 726px;}
+          }}
+    
+
 .arrow {
     position: absolute;
     bottom: 30px;
