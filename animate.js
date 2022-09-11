@@ -4,3 +4,4 @@ if (performance.navigation.type == 1) {
     console.log( "Not reloaded");
   }
 
+  history.pushState('', '', window.location.pathname);
