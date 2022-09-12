@@ -179,6 +179,7 @@ nav{
     100%{opacity: 1}
 }
 
+
 #intro{
     padding: 0% 10%;
     background: #f8f8f8;
@@ -192,6 +193,13 @@ nav{
     background: #f8f8f8;
     margin:1%;
 }
+
+ #research{
+    padding: 0% 10%;
+    background: #f8f8f8;
+    margin:1%;
+}
+
 
 #about_text{
     height:100vh;
@@ -213,13 +221,6 @@ nav{
     cursor:default
  }   
 
-
- #research{
-    padding: 0% 10%;
-    background: #f8f8f8;
-    margin:1%;
-}
-
  #research_text{
     height:100vh;
     width: 100%;
@@ -229,6 +230,7 @@ nav{
     font-size: 3.6rem;
     cursor:default
  }   
+
 
 
  @media screen and (max-width:1050px){
