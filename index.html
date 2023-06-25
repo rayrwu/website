@@ -13,84 +13,74 @@
         <section id = "home">
             <nav>
                 <ul class = "navlist">
-                    <li><a href="#home">HOME</a></li>
-                  <li><a href="#intro">ABOUT</a></li>
-                    <li><a href="#research" >WORK</a></li>
+                  <li ><a href="https://drive.google.com/file/d/1OKBcapF05Cp5t-AfngyNQPExtbqWQBk7/view?usp=drive_link"
+                    class = "ftext" style = "text-decoration: none" 
+                    target="_blank" rel="noopener noreferrer"
+                    >DOWNLOAD CV</a></li>
+
                 </ul>
             </nav>
             <h1 id="name">RAYMOND WU</h1>
             <h1 id="role">Graduate Student in 
-                <span style = "color:#86a96f">Cognitive Science</span>
+                <span style = "color:#02a1c0">Cognitive Science</span>
                 </h1>
-            <a href = "#intro" class="arrow"></a>
+            <a href = "#" onclick = "scrollToSection(event, 'intro')"  
+                        class="arrow"></a>
+
+
+
         </section>
 
         <div class = "space"></div>
 
     <section id = "intro">
-            <div id = "intro_text"> <p> Hi there! I'm Raymond, 
-                a <span style = "color:#86a96f">graduate student </span>researcher
-                    living in Vancouver <s>Toronto</s> <img src="to.gif" class="gifs">. 
-                    My goal is to <span style = "color:#86a96f">collaborate 
-                    </span> with nice people <img src="handshake.gif" class="gifs"> 
-                    and use statistical models (from behavioral, survey,
-                     and physiological data) to improve our understanding of 
-                     <span style = "color:#86a96f">human behavior</span> <img src = "slot.gif" class="gifs">.
+            <div id = "intro_text"> <p> Hello, I'm Raymond. I use statistical models from
+                large-scale survey, behavioural, and physiological data to better our understanding 
+                of human behaviour.
+
                 </p></div>
         </section>
 
-    <section id = "research">
-        <div id = "research_text"> <p>
-          Specifically, my lines of research span... <br>
-          😋 <span style = "color:#86a96f">Self-control </span>in addictive behaviors <br>
-          🧠 Theoretical accounts of <span style = "color:#86a96f">decision-making</span> <br>
-          📱  <span style = "color:#86a96f">Digital technology </span>in addiction
-        </p></div>
-    </section>
-
-    <div id = "background">
-
-        <div id = "education">
-            <p id = "educationtext">
-                Twitter </p>
-            <a href = "https://twitter.com/rayrwu" target="_blank" rel="noopener noreferrer"><span id = "rationalelink"></span></a>
-
-        </div>
-
-        <div id = "rationale">
-            <p id = "rationaletext">Google Scholar</p>
-            <a href = "https://scholar.google.ca/citations?hl=en&user=zDk2hSMAAAAJ" target="_blank" rel="noopener noreferrer"><span id = "educationlink"></span></a>
-
-        </div>
-
-    </div>
-
-    <div id = "intro2">
-        <div id = "CV">
-            <p id = "CVtext">Profile </p>
-            <a href = "https://psych.ubc.ca/profile/raymond-wu/" target="_blank" rel="noopener noreferrer"><span id = "CVlink"></span></a>
-        </div>
-
-        <div id = "GS">
-            <p id = "GStext">LinkedIn</p>
-            <a href = "https://www.linkedin.com/in/raywuu/" target="_blank" rel="noopener noreferrer"><span id = "GSlink"></span></a>
-        </div>
-    </div>
+        <div class = "space"></div>
 
 
-    <div class = "footer">
+        <footer>
 
-        <div id = "footerlogo">
-            <p>         
-         
-            <span id = footertext>
-            2136 West Mall 
-            <br>Vancouver, BC V6T 1Z4</br> Canada</span></p>
-        </div>
-    </div>
+          <div id = "contact">
+          <p> <a href = "https://www.twitter.com/rayrwu" 
+            class = "ftext" style = "text-decoration: none" 
+            target="_blank" rel="noopener noreferrer">Twitter</a> <br>
+            
+        <a href = "https://scholar.google.ca/citations?user=zDk2hSMAAAAJ&hl=en&authuser=1"
+        class = "ftext" style = "text-decoration: none"
+        target="_blank" rel="noopener noreferrer">Google Scholar</a><br>
 
-    </div>
+         <a href = "https://www.linkedin.com/in/raywuu/" 
+         class = "ftext" style = "text-decoration: none"
+         target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+
+         </div>
+
+         <div id = "address">
+          <p class = "ftext2">2136 West Mall</p>
+          <p class = "ftext2"> Vancouver, BC V6T 1Z4</p>
+          <p class = "ftext2">Canada</p>
+
+         </div>
+
+
+
+          </footer>
+
+
     <script src = "animate.js"></script>
+    <script>
+        function scrollToSection(event, sectionId) {
+          event.preventDefault();
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
 
 </body>
 </html>

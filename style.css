@@ -4,7 +4,8 @@
     box-sizing: border-box
 }
 
-body{overflow: hidden;}
+body{overflow: hidden; 
+    background-color: white;}
 
 /************************Landing page*/ 
 
@@ -50,9 +51,7 @@ nav{
     height: 100vh;
     width:100%;
     position:relative;
-    background: #E3E3E3;
-
-}
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);}
 
 @media screen and (min-width: 760px){
 
@@ -182,19 +181,11 @@ nav{
 
 #intro{
     padding: 0% 10%;
-    background: #f8f8f8;
+    background: #f5f7fa;
     margin-left:1%;
     margin-right:1%;
 }
 
-
- #research{
-    padding: 0% 10%;
-    background: #f8f8f8;
-    margin:1%;
-    align-items: center;
-    text-align: center;
-}
 
  #intro_text{
     height:100vh;
@@ -206,19 +197,6 @@ nav{
     cursor:default
  }   
 
- #research_text{
-    height:100vh;
-    width: 100%;
-    display:flex;
-    font-family:'Jost';
-    font-size: 3rem;
-    cursor:default;
-    align-items: center;
-    text-align:left;
-    justify-content: center
-;
- }   
-
 
 
  @media screen and (max-width:1050px){
@@ -226,28 +204,15 @@ nav{
         padding: 10% 10%;
         height:auto;
     }
-    #about_text{
-        height:auto;
-        font-size:3rem
-     }}   
+}   
 
      @media screen and (max-width:1050px){
-        #about{
-            padding: 10% 10%;
-            height:auto;
-        }
+        
         #intro_text{
             height:auto;
             font-size:3rem
          }
-         #research{
-            padding: 10% 10%;
-            height:auto;
-        }
-        #research_text{
-            height:auto;
-            font-size:3rem
-        }}
+    }
         
 
 
@@ -264,191 +229,51 @@ nav{
     align-content: space-around;
 }
 
-.gifs{width:110px; height:60px; object-fit: cover; border-radius: 10%;}
 
-#CV{
-    width:500px;
-    height:500px;
-    background: #f8f8f8;
-    flex-grow:1;
-    margin-left:1%;
-    margin-bottom:1%;
-    margin-right:1%;
-    position:relative;
-}
-
-#GS{
-    width:500px;
-    height:500px;
-    background: #f8f8f8;
-    flex-grow:1;
-    margin-right:1%;
-    margin-bottom:1%;
-    position: relative;
-}
-
-#CVtext{
-    height:100%;
+footer{
     width:100%;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    font-family: 'Jost';
-    color:black;
-    font-size:2rem;
+    height: 200px;
+    background-color: #f5f7fa;
+    overflow: hidden;
+    font-family:'Jost';
 }
 
-#GStext{
-    height:100%;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    font-family: 'Jost';
-    color:black;
-    font-size:2rem;
+.ftext{
+    font-size: 1 rem;
+    color: black
 }
 
-#CV:hover{
-    background: #f0f0f0;
-}
-#GS:hover{
-    background: #f0f0f0;
-}
-
-#CVlink{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
+.ftext2{
+    font-size: 1 rem;
+    color: black;
+    cursor:default
 }
 
-#GSlink{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
+#contact{
+float:left;
+padding-left: 10%;
+padding-top: 50px;
+padding-bottom: 100px;
 }
 
-.footer{
-    width:100%;
-    height:25vh;
-    background-color: #303030;
-    overflow:hidden;
+#address{
+    float:right;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: right;
 }
 
-#footerlogo{
-    font-family: 'Jost';
-    font-size:1.5rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:#E0DEDE;
-    height:100%;
-}
+/* hover color*/
 
-#footertext{
-    font-size:1rem;
-}
-
-/***********************************************ABOUT PAGE*/
-
-
-#background{
-    width:100%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-}
-
-#education{
-    width:500px;
-    height:500px;
-    background: #f8f8f8;
-    flex-grow:1;
-    margin-left:1%;
-    margin-bottom:1%;
-    margin-right:1%;
-    position: relative;
-}
-
-#rationale{
-    width:500px;
-    height:500px;
-    background: #f8f8f8;;
-    flex-grow:1;
-    position: relative;
-    margin-right:1%;
-
-}
-
-#educationtext{
-    height:100%;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    font-family: 'Jost';
-    color:black;
-    font-size:2rem;
-    cursor:default;
-
-}
-
-#rationaletext{
-    height:100%;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    font-family: 'Jost';
-    color:black;
-    font-size:2rem;
-    cursor:default;
-
-}
-
-#rationalelink{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-}
-
-#educationlink{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-}
-
-#education:hover {
-    background: #f0f0f0;
-}
-
-#rationale:hover {
-    background: #f0f0f0;
-}
-
-@media screen and (max-width:1050px){
-    #education{
-        margin-bottom:0%;
-        margin-left:1%;
-    }
-    #rationale{
-        margin-left:1%;
-        margin-bottom:1%;
-        margin-top:1%
-    }
-    #GS{
-        margin-left:1%;
-    }
+.navlist a:hover{
+    color:#02a1c0
     }
 
+.arrow:hover{
+        color:#02a1c0
+        }
 
+.ftext:hover{
+        color:#02a1c0
+            }

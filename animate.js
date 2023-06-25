@@ -5,3 +5,6 @@ if (performance.navigation.type == 1) {
   }
 
   history.pushState('', '', window.location.pathname);
+
+
+  
