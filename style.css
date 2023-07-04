@@ -194,7 +194,8 @@ nav{
     align-items: center;
     font-family:'Jost';
     font-size: 3rem;
-    cursor:default
+    cursor:default;
+    text-align: center;
  }   
 
 
