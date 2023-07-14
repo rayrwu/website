@@ -216,30 +216,6 @@ nav{
     color: #000000
  }   
 
- hr{
-width:5px;
-background-color: red;
-
- }
-
-
-
- @media screen and (max-width:1050px){
-    #intro{
-        padding: 10% 10%;
-        height:auto;
-    }
-}   
-
-     @media screen and (max-width:1050px){
-        
-        #intro_text{
-            height:auto;
-            font-size:3rem
-         }
-    }
-        
-
 
 .space{
     width:100%;
