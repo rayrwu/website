@@ -8,3 +8,5 @@ if (performance.navigation.type == 1) {
 
   window.addEventListener('scroll', this.handleScroll, true);
 
+
+

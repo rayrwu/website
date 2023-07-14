@@ -11,11 +11,11 @@
     <div class="container">
 
         <section id = "home">
-            <nav>
+            <nav class = "nav">
                 <ul class = "navlist">
-                  <li ><a href= "CV"
+                  <li ><a href= "CV.html"
                     target="_blank" rel = "noreferrer noopener"
-                    >DOWNLOAD CV</a></li>
+                    >&nbspDOWNLOAD CV&nbsp</a></li>
 
                 </ul>
             </nav>
@@ -38,8 +38,9 @@
             <div id = "intro_text"> 
               <p> 
 
-              My research focuses on using large-scale survey, behavioural, and physiological data to
-              better our understanding of decision-making, digital technology use, and addiction in humans.</p>
+              We don't always make the best choices. <br>
+              My research uses large-scale survey, behavioural, and physiological data to
+              better understand decision-making, digital technology use, and addiction in humans.</p>
 
             </div>
         </section>
@@ -84,6 +85,27 @@
           section.scrollIntoView({ behavior: 'smooth' });
         }
       </script>
+
+<script>
+
+{
+  const nav = document.querySelector(".nav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("nav--hidden");
+    } else {
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+
+
+</script>
+
 
 </body>
 </html>
