@@ -89,7 +89,7 @@ nav{
     
     #role{
         position:relative;
-        top:17%;
+        top:16%;
         font-size: 2.77rem;
         font-family:'Jost';
         font-weight: normal;
@@ -111,7 +111,7 @@ nav{
 
         #name{
             position:relative;
-            top:25%;
+            top:23%;
             font-size: 13.2vw;
             font-family:'Jost';
             font-weight: normal;
@@ -134,7 +134,7 @@ nav{
         
         #role{
             position:relative;
-            top:26%;
+            top:25%;
             font-size: 5.4vw;
             font-family:'Jost';
             font-weight: normal;
