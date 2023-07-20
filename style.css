@@ -47,7 +47,7 @@ nav{
     margin-left:20px;
     margin-right:20px;
     margin-top:20px;
-    font-size: 4vh;
+    font-size: 2rem;
     font-family:'Jost';
     animation: introfadein 5s;
 }
@@ -79,7 +79,7 @@ nav{
         font-weight: normal;
         margin-right:0;
         cursor: default;
-        animation: nameanime 1s steps(12,end) 0.5s 1 normal both;
+        animation: nameanime 1.2s steps(12,end) 0.5s 1 normal both;
         animation-delay:.2s;
         white-space:nowrap;
         overflow:hidden;
@@ -101,7 +101,7 @@ nav{
         font-weight: normal;
         margin-right:0;
         cursor: default;
-        animation: roleanime 1.5s steps(15,end) 0.5s 1 normal both;
+        animation: roleanime 1.4s steps(15,end) 0.5s 1 normal both;
         animation-delay:1.4s;
         white-space:nowrap;
         overflow:hidden;
@@ -209,7 +209,7 @@ footer{
     padding-bottom: 20%;
 }
 
-footer p {font-size:3vh;
+footer p {font-size:1.5rem;
 }
 
 .ftext{
@@ -225,14 +225,12 @@ footer p {font-size:3vh;
 float:left;
 padding-left: 5%;
 padding-top: 3%;
-padding-bottom: 10%;
 }
 
 #address{
     float:right;
     padding-right: 5%;
     padding-top: 3%;
-    padding-bottom: 10%;
     text-align: right;
 }
 
