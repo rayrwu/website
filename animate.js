@@ -8,5 +8,6 @@ if (performance.navigation.type == 1) {
 
   window.addEventListener('scroll', this.handleScroll, true);
 
-
-
+  window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
