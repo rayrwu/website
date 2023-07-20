@@ -111,7 +111,7 @@ nav{
     }
     @keyframes roleanime{
         from{width: 0;}
-        to{width: 700px;}
+        to{width: 730px;}
       }}
 
       @media screen and (orientation: portrait){
