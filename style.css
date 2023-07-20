@@ -71,7 +71,7 @@ nav{
     width:100%;
     position:relative}
 
-@media screen and (min-width: 760px){
+@media screen and (orientation: landscape){
 
     #name{
         position:relative;
@@ -111,10 +111,10 @@ nav{
     }
     @keyframes roleanime{
         from{width: 0;}
-        to{width: 726px;}
+        to{width: 700px;}
       }}
 
-      @media screen and (max-width: 760px){
+      @media screen and (orientation: portrait){
 
         #name{
             position:relative;
@@ -136,7 +136,7 @@ nav{
         
         @keyframes nameanime{
             from{width: 0px;}
-            to{width: 740px;}
+            to{width: 1500px;}
           }
         
         #role{
@@ -157,7 +157,7 @@ nav{
         }
         @keyframes roleanime{
             from{width: 0;}
-            to{width: 726px;}
+            to{width: 1500px;}
           }}
 
 .arrow {
