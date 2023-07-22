@@ -5,7 +5,7 @@
 }
 
 body{
-    background: radial-gradient(circle, rgba(253,251,251,1) 29%, rgba(235,237,238,1) 78%);
+    background: #FDFBFB;
 overflow: scroll;
 }
 
@@ -56,7 +56,7 @@ nav{
     text-decoration: none;
     color: #000000;
     z-index:10;
-    background: #f3ee60;
+    background: #FDFBFB;
 }
 
 /*Background characteristics*/
@@ -222,11 +222,11 @@ padding-top: 3%;
 
 /* hover color*/
 
-.navlist a:hover{
-    font-weight: 700;
-}
 
 .ftext:hover{
-        font-weight: 700;
+        font-weight: bold
             }
 
+.navlist a:hover{
+font-weight:bold
+}
