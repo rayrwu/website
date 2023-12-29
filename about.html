@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>Raymond Wu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Hi there! I'm Raymond, a PhD student in Cognitive Science at the University of British Columbia.">
+    <meta name="keywords" content="Raymond Wu">
+</head>
+<body id = "second">
+
+  <div class="container">
+
+    <section id = "home">
+        <nav class = "nav">
+            <ul class = "navlist">
+              <li >
+
+                <a href = "index">&nbspHome&nbsp&nbsp</a>
+                <a href = "about">&nbspAbout&nbsp&nbsp</a>
+                
+                <a href = "projects">&nbspProjects&nbsp&nbsp</a>
+                <a href = "teaching">&nbspTeaching&nbsp</a>
+
+                <a href= "CV"
+                target="_blank" rel = "noreferrer noopener"
+                >&nbsp&nbspCV&nbsp</a></li>
+
+            </ul>
+        </nav>
+
+    </section>
+
+    <div class = "space"></div>
+
+
+    <section id = "intro">
+
+            <div id = "intro_text"> 
+              <p> 
+    I am a PhD student in the Department of Psychology at The Univeristy of British Columbia, working 
+     with <a href = "https://cgr.psych.ubc.ca/" target = "_blank"
+     rel = "noreferrer noopener" class = "aboutlink"><span>Dr. Luke Clark</span></a> at The Centre for Gambling Research. My research aims to advance our
+     knowledge of human behavior and serve as a cornerstorne to reduce harms associated with 
+     digital technology use and inform evidence-based policies.
+    
+     
+     
+  </br></br>
+
+My research ethos is rooted in passion and openness. I am passionate about the craft and rigour at each stage of the research process,
+including open science practices. I have made all my 
+articles and data publicy available (<a href= "https://www.osf.io/anm2z" target="_blank" rel = "noreferrer noopener" 
+class = "aboutlink"
+                    >here</a>). Also, all my graduate school application
+materials are shared (<a href= "gradmats" target="_blank" rel = "noreferrer noopener" 
+class = "aboutlink"
+                    >PDF</a>) in hopes that it will be helpful for prospective graduate students.
+
+</br></br>
+
+Along with research, I like to play sports, enjoy video games, and explore tasty foods.
+
+    </p>
+
+            </div>
+        </section>
+
+        <div class = "space"></div>
+
+
+
+
+
+        <footer>
+
+          <div id = "contact">
+          <p> <a href = "https://www.twitter.com/rayrwu" 
+            class = "ftext" style = "text-decoration: none" 
+            target="_blank" rel="noopener noreferrer">Twitter</a> <br>
+            
+        <a href = "https://scholar.google.ca/citations?user=zDk2hSMAAAAJ&hl=en&authuser=1"
+        class = "ftext" style = "text-decoration: none"
+        target="_blank" rel="noopener noreferrer">Google Scholar</a><br>
+
+         <a href = "https://www.linkedin.com/in/raywuu/" 
+         class = "ftext" style = "text-decoration: none"
+         target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+
+         </div>
+
+         <div id = "address">
+          <p class = "ftext2">2136 West Mall</p>
+          <p class = "ftext2"> Vancouver, BC V6T 1Z4</p>
+          <p class = "ftext2">Canada</p>
+
+         </div>
+
+
+
+          </footer>
+
+
+    <script src = "animate.js"></script>
+    <script>
+        function scrollToSection(event, sectionId) {
+          event.preventDefault();
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+
+<script>
+
+{
+  const nav = document.querySelector(".nav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("nav--hidden");
+    } else {
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+
+
+</script>
+
+</body>
+</html>
+
