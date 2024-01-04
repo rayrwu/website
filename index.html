@@ -2,8 +2,10 @@
 <head>
     <title>Raymond Wu</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <meta name="description" content="Hi there! I'm Raymond Wu, a PhD student in Cognitive Science at the University of British Columbia.">
+    <meta name="description" content="Hi there! I'm Raymond Wu, a PhD student in Cognitive Science,
+    NSERC Doctoral Fellow, and member of the Centre for Gambling Research at the University of British Columbia.">
 </head>
 <body id = "main">
 
@@ -11,54 +13,48 @@
 
         <section id = "home">
             <nav class = "nav">
-                <ul class = "navlist">
-                  <li >
-                    <a href = "https://raymondwu.ca/" >&nbspHome&nbsp&nbsp</a>
-                    <a href = "about">&nbspAbout&nbsp&nbsp</a>
-                    
-                    <a href = "projects">&nbspProjects&nbsp&nbsp</a>
-                    <a href = "teaching">&nbspTeaching&nbsp</a>
-    
-                    <a href= "CV"
-                    target="_blank" rel = "noreferrer noopener"
-                    >&nbsp&nbspCV&nbsp</a></li>
+              <ul class = "navlist">
+                <li>
+                  <a href = "https://raymondwu.ca/" >RW</a></li>
+                  <li><a href = "work">WORK</a></li>
+                  <li><a href = "about">ABOUT</a></li>
+                 <li><a href= "CV"
+                  target="_blank" rel = "noreferrer noopener"
+                  >CV</a></li>
 
-                </ul>
+              </ul>
             </nav>
  <h1 id="name">RAYMOND WU</h1>
-            <h1 id="role">Cognitive Science PhD Student @ UBC
+            <h1 id="role">Decisions, Digital Technology, and Addiction
                 </h1>
-            <a href = "#" onclick = "scrollToSection(event, 'intro')"  
+            <a href = "#" onclick = "scrollToSection(event, 'intro_img')"  
                         class="arrow"></a></section>
 
-
-
-
+     
         </section>
 
-        <div class = "space"></div>
-        
+      
 
     <section id = "intro">
 
-            <div id = "intro_text"> 
-              <p> 
+      <section id = "intro_image" >
+        <img id = "intro_img" src = "intro_image.jpg" class = "hidden">
+      </section>
 
-              The excessive consumption of digital products, such as online gambling, social media use, and video gaming, can place a tremendous burden
-               on the lives of individuals, families, and society more broadly <br><br>
+            <section id = "intro_text" > 
+              <p id = "intro_t1" > 
+
+              People consume products, such as gambling games, social media, and video games, on a daily basis. Unfortunately, doing so excessively
+             can burden
+               individual lives, families, and society more broadly </br></br></p>
+               <p id = intro_t2 >
 
 
-               I design experiments, analyze data using advanced statistical techniques, and write peer-reviewed
-               research articles on decision-making, digital technology use, and behavioral addictions in humans</p>
-
-            </div>
+               I design experiments, analyze data using advanced statistical models, and write peer-reviewed
+               research articles on the topics of decision-making, digital technology use, and behavioral addictions in humans</p>
+               </p>
+              </section>
         </section>
-
-        <div class = "space"></div>
-
-
- 
-
 
         <footer>
 
@@ -67,15 +63,16 @@
             class = "ftext" style = "text-decoration: none" 
             target="_blank" rel="noopener noreferrer">Twitter</a> <br>
             
-        <a href = "https://scholar.google.ca/citations?user=zDk2hSMAAAAJ&hl=en&authuser=1"
-        class = "ftext" style = "text-decoration: none"
-        target="_blank" rel="noopener noreferrer">Google Scholar</a><br>
+
 
          <a href = "https://www.linkedin.com/in/raywuu/" 
          class = "ftext" style = "text-decoration: none"
-         target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+         target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
 
-         </div>
+        <a href = "mailto:rwu@psych.ubc.ca"
+        class = "ftext" style = "text-decoration: none"
+        target="_blank" rel="noopener noreferrer">Email</a>
+         </p></div>
 
          <div id = "address">
           <p class = "ftext2">2136 West Mall</p>
@@ -88,33 +85,7 @@
 
 
     <script src = "animate.js"></script>
-    <script>
-        function scrollToSection(event, sectionId) {
-          event.preventDefault();
-          const section = document.getElementById(sectionId);
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      </script>
 
-<script>
-
-{
-  const nav = document.querySelector(".nav");
-  let lastScrollY = window.scrollY;
-
-  window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-      nav.classList.add("nav--hidden");
-    } else {
-      nav.classList.remove("nav--hidden");
-    }
-
-    lastScrollY = window.scrollY;
-  });
-}
-
-
-</script>
 
 </body>
 </html>

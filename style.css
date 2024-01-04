@@ -5,7 +5,6 @@
 }
 
 #body{
-    background: #000000;
 overflow: scroll;
 }
 
@@ -27,96 +26,67 @@ body::-webkit-scrollbar {
 /*Navigation bar*/
 
 nav{
-    position:fixed;
-    left:50%;
-    transform: translateX(-50%);
-    white-space:nowrap;
     cursor: default;
-    z-index:9;
     transition: transform 2s;
-    background-color: rgba(0,0,0,.75)
 }
 
-#second nav{
-    background-color: rgba(243,238,231,.75)
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    height:5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: right;
+    background-color: #F3EEE7;
 }
 
-#third nav{
-    background-color: rgba(243,238,231,.75)
-}
-
-#fourth nav{
-    background-color: rgba(243,238,231,.75)
-}
-
-.nav--hidden{
-    transform: translateY(-200%) translateX(-50%)
-}
-
- #main .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 2rem;
+#main .nav li{
+    font-size: 1.25rem;
     font-family:'Jost';
     animation: introfadein 3s;
+    height:5%;;
+    display: inline;
+    padding: 0% .75%;
 }
 
-#main .navlist a{
-    text-decoration: none;
-    color: #B4975A;
-    z-index:10
+.nav li:first-child{
+    font-size: 1.25rem;
+    font-family:'Jost';
+    height:5%;
+    float: left;
+    padding: 0% .75%;
 }
 
-#second .navlist a{
+#second .nav li{
+    font-size: 1.25rem;
+    font-family:'Jost';
+    height:5%;;
+    display: inline;
+    padding: 0% .75%;
+}
+
+
+#third .nav li{
+    font-size: 1.25rem;
+    font-family:'Jost';
+    height:5%;;
+    display: inline;
+    padding: 0% .75%;
+}
+
+.navlist a{
     text-decoration: none;
     color: #000000;
-    z-index:10
+    box-shadow: inset 0 0 0 0 rgba(177,200,209,.5);
+    transition: 1.5s
 }
 
-#third .navlist a{
-    text-decoration: none;
-    color: #000000;
-    z-index:10
+
+.navlist a:hover{
+    box-shadow: inset 300px 0 0 0 rgba(177,200,209,.5);
 }
 
-#fourth .navlist a{
-    text-decoration: none;
-    color: #000000;
-    z-index:10
-}
-
- #second .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 2rem;
-    font-family:'Jost';
-}
-
-#third .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 2rem;
-    font-family:'Jost';
-}
-
-#fourth .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 2rem;
-    font-family:'Jost';
-}
 
 /*Background characteristics*/
 
@@ -127,41 +97,17 @@ nav{
 }
 
 #main #home{
-    height: 100vh;
+height:100vh;
     width:100%;
     position:relative;
-background-color: #000000;
-
-
+background-color: #F3EEE7
 }
 
 
-#second #home{
-        height: 5%;
-        width:100%;
-        position:relative;
-    background-color: #F3EEE7;
-    
-    }
-
-    #third #home{
-        height: 5%;
-        width:100%;
-        position:relative;
-        background-color: #F3EEE7;}
-
-        #fourth #home{
-            height: 5%;
-            width:100%;
-            position:relative;
-            background-color: #F3EEE7;
-
-        }
-
     #name{
         position:relative;
-        top:25vh;
-        font-size: 8vw;
+        top:21vh;
+        font-size: 10vw;
         font-family:'Jost';
         font-weight: normal;
         margin-right:0;
@@ -171,8 +117,9 @@ background-color: #000000;
         white-space:nowrap;
         overflow:hidden;
         margin:0 auto;
-        color: #B4975A;
-        text-align:center
+        color: #000000;
+        text-align:center;
+        font-weight: bold;
     }
     
     @keyframes nameanime{
@@ -182,8 +129,8 @@ background-color: #000000;
     
     #role{
         position:relative;
-        top:22vh;
-        font-size: 3.7vw;
+        top:18vh;
+        font-size: 3.5vw;
         font-family:'Jost';
         font-weight: normal;
         margin-right:0;
@@ -193,60 +140,23 @@ background-color: #000000;
         white-space:nowrap;
         overflow:hidden;
         margin:0 auto;
-        color:#B4975A;
+        color:#000000;
         text-align: center;
+
     }
     @keyframes roleanime{
         from{width: 0;}
         to{width: 95%;}
       }
 
+
+
+
+
 @media screen and (orientation:portrait) { 
 
 #role{
-top:24vh}
-
-#main .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 1rem;
-    font-family:'Jost';
-}
-
-#second .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 1rem;
-    font-family:'Jost';
-}
-
-#third .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 1rem;
-    font-family:'Jost';
-}
-
-#fourth .navlist li{
-    display:inline-block;
-    list-style:none;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    font-size: 1rem;
-    font-family:'Jost';
-}
-
-}
+top:20vh}}
 
 .arrow {
     position: absolute;
@@ -255,7 +165,7 @@ top:24vh}
     margin-left: -16px;
     width: 40px;
     height: 40px;
-    border: 2px solid #B4975A;
+    border: 2px solid #000000;
     border-radius: 50%;
     animation: introfadein 3s, arrowbounce 2s infinite 3s;
   }
@@ -269,7 +179,7 @@ top:24vh}
       width: 15px;
       height: 15px;
       content: "";
-      border: 2px solid #B4975A;
+      border: 2px solid #000000;
       border-width: 0px 0 2px 2px;
   }
 
@@ -291,42 +201,218 @@ top:24vh}
 
 
 #intro{
-    padding: 15% 15%;
-    background: #000000;
-    height:100%;
+    background: #F3EEE7;
     display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    height:100%;
+}
+
+#main #intro{
+    height:125%;
 }
 
 
 #second #intro{
-
     background: #F3EEE7;
+    transition: background .5s;
+    font-size: 3.5vh;
+    font-family: "Jost";
+    padding: 0% 15%;
+    display:flex;
+    flex-direction: row;
+    height:100%;
+}
+
+#second #home{
+    background-color: #F3EEE7;
+}
+
+#second #nav{
+    transition: background .5s;
+}
+
+#second #intro_text{
+    width:50%;
+    aspect-ratio: 1/1;
+    text-align: left;
+    display:flex;
+    align-items: center;
+}
+
+#second #hi{
+font-size: 6vh;
+font-weight: bold;
+}
+
+#second #hi2 {
+    font-size:3.5vh;
+}
+
+
+#second #intro_image{
+    width: 50%;
+    aspect-ratio: 1/1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    order:2;
+}
+
+#second #intro_img{
+width:75%;
+height:75%;
 
 }
+
+#second #introdiv{
+    height:75%;
+    background: #F3EEE7;
+    transition: background .5s;
+
+}
+
+#second #intro2{
+    background: #F3EEE7;
+    height:300%;
+    display:flex;
+    align-items: center;
+    transition: background .5s;
+    position:relative;
+
+}
+
+
+#second #intro2_text{
+    padding: 0% 15%;
+    color: #F3EEE7;
+    font-family: "Jost";
+    font-size: 4.5vh;
+    position: absolute;
+    top:5%
+}
+
+#second #intro2_head{
+    font-size:5vh;
+}
+
+
+
+@media screen and (orientation: portrait){
+
+    #second .nav ul {
+        padding-bottom: 15%;
+    }
+
+    #second #intro{
+        background: #F3EEE7;
+        transition: background .5s;
+        font-size: 3.5vh;
+        font-family: "Jost";
+        padding: 0% 15%;
+        display:flex;
+        flex-direction: column;
+        height:100%;
+    }
+    
+    #second #intro_text{
+        width:100%;
+        aspect-ratio: 1/1;
+        text-align: left;
+        display:flex;
+        align-items: center;
+        order:2;
+    }
+    
+    #second #hi{
+    font-size: 5vh;
+    font-weight: bold;
+    }
+    
+    #second #hi2 {
+        font-size:3vh;
+    }
+    
+    
+    #second #intro_image{
+        width: 75%;
+        aspect-ratio: 1/1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        order:1;
+    }
+    
+    #second #intro_img{
+    width: 100%;
+    height:100%;
+    
+    }
+    
+    #second #intro2{
+        height:250%;
+    }
+    #second #intro2_text{
+        padding: 0% 15%;
+        color: #F3EEE7;
+        font-family: "Jost";
+        font-size: 4vw;
+        position: absolute;
+        top:5%
+    }
+    
+    #second #intro2_head{
+        font-size:5.5vw;
+    }
+    
+}
+
+
+
+
+
+
 
 #third #intro{
     background: #F3EEE7;
+    padding-top: 20%;
+
 }
 
-#fourth #intro{
-    background: #F3EEE7;
+
+
+#main #intro_image{
+height:90%;
+width:40%;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+#main #intro_img{
+width:90%;
+height:90%;
+object-fit:contain;
 }
 
 
- #main #intro_text{
-    font-family:'Jost';
-    font-size: 4.5vh;
-    cursor:default;
-    text-align: left;
-color:#B4975A}
 
-#second #intro_text{
-    font-family:'Jost';
-    font-size: 3.5vh;
-    cursor:default;
-    text-align: left;
-color:#000000}
+#main #intro_text{
+height:90%;
+width:40%;
+padding-right: 5%;
+font-family: "Jost";
+color:#000000;
+display:flex;
+flex-direction: column;
+justify-content: center;
+font-size: 1.5vw;
+background-color: #F3EEE7;
+}
+
+
+
 
 #third #intro{
     font-family:'Jost';
@@ -352,57 +438,52 @@ color:#000000}
 
  @media screen and (orientation:portrait) { 
 
-
-    .navlist li{
-        font-size: 4vw;
+    #main #intro{
+        flex-direction: column;
+        height:175%;
+        padding:30% 5%;
     }
-
-    #intro{
-        padding:15% 10%
-    }
+#main #intro_image{
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+#main #intro_img
+{width: 100%; height:100%}
 
     #main #intro_text{
-    font-size:3.5vw}
+        padding-right: 0%;
+        text-align: center;
+        width:80%;
+        font-size: 5vw;
+
+    }
 
     #second #intro_text{
-        font-size:3.5vw;
-
-        
-}
-
-#fourth #intro_text{
-    font-size:3.5vw;
-}
-.ftext{
-    font-size:1rem
-}
-
-.ftext2{
-    font-size:1rem
-}
-        
-    }
+        font-size:3vw;
+}}
 
 
 footer{
     width:100%;
-    height: 20vh;
+    height: 25vh;
     overflow: hidden;
     font-family:'Jost';
-    padding-bottom: 20%;
-    padding-top: 2.5%;
+    padding-bottom: 15%;
+    padding-top: 5%;
 }
 
 #main footer{
-    background-color: #000000;
+    background-color: black
 }
 
 #second footer{
     background-color: #F3EEE7;
+    transition: background .5s;
 }
 
 #third footer{
-    background-color: #F3EEE7;
+    background-color: black;
 }
 
 #fourth footer{
@@ -410,31 +491,33 @@ footer{
 }
 
 
-footer p {font-size:1.5rem;
+footer p {font-size:1.25rem;
 }
 
 #main .ftext{
-    color: #B4975A
+    color: #F3EEE7
 }
 
 #main .ftext2{
-    color: #B4975A;
+    color: #F3EEE7;
     cursor:default
 }
 
 #second .ftext{
-    color: #000000;
+    color: #F3EEE7;;
+}
+
+#second .ftext2{
+    color: #F3EEE7;;
 }
 
 #third .ftext{
-    color: #000000;
+    color: #F3EEE7;
 }
 
-#fourth .ftext{
-    color: #000000;
+#third .ftext2{
+    color: #F3EEE7;
 }
-
-
 
 
 #contact{
@@ -452,8 +535,13 @@ padding-top: 3%;
 
 
 .aboutlink{
-color: #000000;
+color: #F3EEE7;
 }
+
+.aboutlink2{
+    color:black;
+}
+
 
 
 *{
@@ -465,3 +553,11 @@ color: #000000;
 }
 
 
+.hidden{
+    opacity:0;
+    transition: all 1.5s
+}
+
+.show{
+    opacity:1;
+}
