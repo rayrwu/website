@@ -78,13 +78,13 @@ nav{
 .navlist a{
     text-decoration: none;
     color: #000000;
-    box-shadow: inset 0 0 0 0 rgba(231,236,243,.75);
+    box-shadow: inset 0 0 0 0 rgba(239,248,255);
     transition: 1.5s
 }
 
 
 .navlist a:hover{
-    box-shadow: inset 300px 0 0 0 rgba(231,236,243,.75);
+    box-shadow: inset 300px 0 0 0 rgba(239,248,255);
 }
 
 
@@ -459,11 +459,12 @@ color:#000000}
 
 footer{
     width:100%;
-    height: 25vh;
+    height: 25%;
     overflow: hidden;
     font-family:'Jost';
     padding-bottom: 15%;
     padding-top: 5%;
+    z-index: 999
 }
 
 #main footer{
@@ -487,30 +488,15 @@ footer{
 footer p {font-size:1.25rem;
 }
 
-#main .ftext{
-    color: #F3EEE7
+.ftext{
+    color: #F3EEE7;
 }
 
-#main .ftext2{
+.ftext2{
     color: #F3EEE7;
     cursor:default
 }
 
-#second .ftext{
-    color: #F3EEE7;;
-}
-
-#second .ftext2{
-    color: #F3EEE7;;
-}
-
-#third .ftext{
-    color: #F3EEE7;
-}
-
-#third .ftext2{
-    color: #F3EEE7;
-}
 
 
 #contact{
@@ -562,7 +548,7 @@ color: #F3EEE7;
     display: flex;
     justify-content: center;
    margin-bottom: 3%;
-   border: 2px solid black;
+   border: 1.5px solid black;
    text-align: center;
    align-items: center;
 }
@@ -583,9 +569,9 @@ color: #F3EEE7;
 
 .boxes {
     color: black;
-    padding: 5% 5%;
-    background-color: rgba(231,236,243,1);
-    font-size: 3.5vh;
+    padding: 4% 4%;
+    background-color: #EFF8FF;
+    font-size:1.75vw;
 }
 
 @media screen and (orientation: portrait){
@@ -593,6 +579,7 @@ color: #F3EEE7;
 .boxes{
     width: 75%;
     aspect-ratio: 1/1;
+    font-size: 1.5rem;
 }
 
     .boxhold{
