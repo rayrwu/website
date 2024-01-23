@@ -44,10 +44,16 @@ nav{
 #main .nav li{
     font-size: 1.25rem;
     font-family:'Jost';
-    animation: introfadein 5s;
+    animation: introfadein 4.5s;
     height:5%;;
     display: inline;
     padding: 0% .75%;
+}
+
+@keyframes introfadein{
+    0%{opacity:0}
+50%{opacity: 0}
+    100%{opacity: 1}
 }
 
 .nav li:first-child{
