@@ -35,10 +35,10 @@ const callback_about = (entries, observer) => {
 
     }
       else {
-    document.getElementById("intro").style.setProperty('background-color','#F3EEE7')
-    document.getElementById("introdiv").style.setProperty('background-color','#F3EEE7')
-    document.getElementById("intro2").style.setProperty('background-color','#F3EEE7')
-    document.getElementById("nav").style.setProperty('background-color','#F3EEE7')
+    document.getElementById("intro").style.setProperty('background-color','#F1F3F4')
+    document.getElementById("introdiv").style.setProperty('background-color','#F1F3F4')
+    document.getElementById("intro2").style.setProperty('background-color','#F1F3F4')
+    document.getElementById("nav").style.setProperty('background-color','#F1F3F4')
 
 
   }})}
