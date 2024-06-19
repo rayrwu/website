@@ -38,12 +38,12 @@ nav{
     padding-right: 5%;
     padding-left: 5%;
     text-align: right;
-    background-color: #F1F3F4;
+    background-color: #F7F5F4;
 }
 
 #main .nav li{
     font-size: 1.25rem;
-    font-family:'Jost';
+    font-family:'Open Sans';
     animation: introfadein 4.5s;
     height:5%;;
     display: inline;
@@ -58,7 +58,7 @@ nav{
 
 .nav li:first-child{
     font-size: 1.25rem;
-    font-family:'Jost';
+    font-family:'Open Sans';
     height:5%;
     float: left;
     padding: 0% .75%;
@@ -66,7 +66,7 @@ nav{
 
 #second .nav li{
     font-size: 1.25rem;
-    font-family:'Jost';
+    font-family:'Open Sans';
     height:5%;;
     display: inline;
     padding: 0% .75%;
@@ -75,7 +75,7 @@ nav{
 
 #third .nav li{
     font-size: 1.25rem;
-    font-family:'Jost';
+    font-family:'Open Sans';
     height:5%;;
     display: inline;
     padding: 0% .75%;
@@ -84,14 +84,18 @@ nav{
 .navlist a{
     text-decoration: none;
     color: #000000;
-    box-shadow: inset 0 0 0 0 rgba(198,226,255);
-    transition: 1.5s
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #adc9ed 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
 }
 
 
 .navlist a:hover{
-    box-shadow: inset 300px 0 0 0 rgba(198,226,255);
+    background-position: -100% 0;
 }
+
 
 
 /*Background characteristics*/
@@ -100,7 +104,7 @@ nav{
     scroll-behavior: smooth;
     height: 100vh;
     width: 100%;
-    background-color: #F1F3F4;
+    background-color: E3DAD5;
 }
 
 #main .container{
@@ -111,7 +115,7 @@ nav{
 height:100vh;
     width:100%;
     position:relative;
-background-color: #F1F3F4
+background-color: #F7F5F4
 }
 
 
@@ -119,7 +123,7 @@ background-color: #F1F3F4
         position:relative;
         top:21vh;
         font-size: 10vw;
-        font-family:'Jost';
+        font-family:'Open Sans';
         font-weight: normal;
         margin-right:0;
         cursor: default;
@@ -139,9 +143,9 @@ background-color: #F1F3F4
     
     #role{
         position:relative;
-        top:18vh;
+        top:19vh;
         font-size: 3.5vw;
-        font-family:'Jost';
+        font-family:'Open Sans';
         font-weight: normal;
         margin-right:0;
         cursor: default;
@@ -167,7 +171,7 @@ top:20vh}}
 
 
 #intro{
-    background: #F1F3F4;
+    background: #F7F5F4;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -181,10 +185,10 @@ top:20vh}}
 
 
 #second #intro{
-    background: "#F1F3F4";
+    background: "#F7F5F4";
     transition: background .5s;
     font-size: 3.5vh;
-    font-family: "Jost";
+    font-family: 'Open Sans';
     padding: 0% 15%;
     display:flex;
     flex-direction: row;
@@ -192,7 +196,7 @@ top:20vh}}
 }
 
 #second #home{
-    background-color: #F1F3F4;
+    background-color: #F7F5F4;
 }
 
 #second #nav{
@@ -210,10 +214,18 @@ top:20vh}}
 #second #hi{
 font-size: 6vh;
 font-weight: bold;
+animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    30%{opacity:0;}
+    100%{opacity:1;}
 }
 
 #second #hi2 {
     font-size:3.5vh;
+    animation: fadeIn 1.5s;
 }
 
 
@@ -229,18 +241,19 @@ font-weight: bold;
 #second #intro_img{
 width:75%;
 height:75%;
+animation: fadeIn 1.5s;
 
 }
 
 #second #introdiv{
     height:75%;
-    background: #F1F3F4;
+    background: #F7F5F4;
     transition: background .5s;
 
 }
 
 #second #intro2{
-    background: #F1F3F4;
+    background: #F7F5F4;
     height:300%;
     display:flex;
     align-items: center;
@@ -252,8 +265,8 @@ height:75%;
 
 #second #intro2_text{
     padding: 0% 15%;
-    color: #F1F3F4;
-    font-family: "Jost";
+    color: #F7F5F4;
+    font-family: 'Open Sans';
     font-size: 4.5vh;
     position: absolute;
     top:5%
@@ -272,10 +285,10 @@ height:75%;
     }
 
     #second #intro{
-        background: #F1F3F4;
+        background: #F7F5F4;
         transition: background .5s;
         font-size: 3.5vh;
-        font-family: "Jost";
+        font-family: 'Open Sans';
         padding: 0% 15%;
         display:flex;
         flex-direction: column;
@@ -321,8 +334,8 @@ height:75%;
     }
     #second #intro2_text{
         padding: 0% 15%;
-        color: #F1F3F4;
-        font-family: "Jost";
+        color: #F7F5F4;
+        font-family: 'Open Sans';
         font-size: 4vw;
         position: absolute;
         top:5%
@@ -335,7 +348,7 @@ height:75%;
 }
 
 #third #intro{
-    background: #F1F3F4;
+    background: #F7F5F4;
 }
 
 
@@ -347,14 +360,14 @@ vertical-align: middle;
 color:#000000}
 
 #third #intro_text{
-    font-family:'Jost';
+    font-family:'Open Sans';
     font-size: 4.5vh;
     cursor:default;
     text-align:center;
 color:#000000}
 
 #fourth #intro_text{
-    font-family:'Jost';
+    font-family:'Open Sans';
     font-size: 3.5vh;
     cursor:default;
     text-align: left;
@@ -392,7 +405,7 @@ footer{
     width:100%;
     height: 25%;
     overflow: hidden;
-    font-family:'Jost';
+    font-family:'Open Sans';
     padding-bottom: 15%;
     padding-top: 5%;
     z-index: 999
@@ -403,7 +416,7 @@ footer{
 }
 
 #second footer{
-    background-color: #F1F3F4;
+    background-color: #F7F5F4;
     transition: background .5s;
 }
 
@@ -412,7 +425,7 @@ footer{
 }
 
 #fourth footer{
-    background-color: #F1F3F4;
+    background-color: #F7F5F4;
 }
 
 
@@ -420,11 +433,11 @@ footer p {font-size:1.25rem;
 }
 
 .ftext{
-    color: #F1F3F4;
+    color: #F7F5F4;
 }
 
 .ftext2{
-    color: #F1F3F4;
+    color: #F7F5F4;
     cursor:default
 }
 
@@ -445,7 +458,7 @@ padding-top: 3%;
 
 
 .aboutlink{
-color: #F1F3F4;
+color: #F7F5F4;
 }
 
 .aboutlink2{
@@ -465,7 +478,7 @@ color: #F1F3F4;
 
 .hidden{
     opacity:0;
-    transition: all 1.5s
+    transition: 1.5s
 }
 
 .show{
