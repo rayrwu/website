@@ -5,7 +5,7 @@
 }
 
 #body{
-overflow: scroll;
+overflow: none;
 }
 
 body::-webkit-scrollbar {
@@ -27,7 +27,8 @@ body::-webkit-scrollbar {
 
 nav{
     cursor: default;
-    transition: transform 2s;
+    transition: transform 2s
+
 }
 
 .nav ul {
@@ -38,12 +39,12 @@ nav{
     padding-right: 5%;
     padding-left: 5%;
     text-align: right;
-    background-color: #F7F5F4;
+    background-color: white;
 }
 
 #main .nav li{
     font-size: 1.25rem;
-    font-family:'Open Sans';
+    font-family:'Jost';
     animation: introfadein 4.5s;
     height:5%;;
     display: inline;
@@ -57,16 +58,19 @@ nav{
 }
 
 .nav li:first-child{
-    font-size: 1.25rem;
-    font-family:'Open Sans';
     height:5%;
     float: left;
     padding: 0% .75%;
 }
 
+#navname{
+    font-family: 'Jost';
+    font-size:1.5rem;
+}
+
 #second .nav li{
     font-size: 1.25rem;
-    font-family:'Open Sans';
+    font-family:'Jost';
     height:5%;;
     display: inline;
     padding: 0% .75%;
@@ -75,27 +79,48 @@ nav{
 
 #third .nav li{
     font-size: 1.25rem;
-    font-family:'Open Sans';
+    font-family:'Jost';
     height:5%;;
     display: inline;
     padding: 0% .75%;
+    
 }
 
-.navlist a{
+.nav li:nth-child(2) a{
     text-decoration: none;
-    color: #000000;
-    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #adc9ed 50%);
-    background-position: -0% 0;
-    background-size: 200% auto;
+    color:#C7C0B8;
+    ;
+}
+
+.nav li:nth-child(3) a{
     text-decoration: none;
-    transition: background-position 0.5s ease-out;
+    color:#C7C0B8;
+    ;
+}
+.nav li:nth-child(4) a{
+    text-decoration: none;
+    color:#C7C0B8;
+    ;
+}
+
+.nav li:nth-child(1) a{
+    text-decoration: none;
+    color:black;
+}
+
+.nav li a:hover{
+    color:black;
+    transition: .25s;
 }
 
 
-.navlist a:hover{
-    background-position: -100% 0;
+#third .nav li:nth-child(2) a{
+    color:black;
 }
 
+#second .nav li:nth-child(3) a{
+    color:black;
+}
 
 
 /*Background characteristics*/
@@ -104,18 +129,20 @@ nav{
     scroll-behavior: smooth;
     height: 100vh;
     width: 100%;
-    background-color: E3DAD5;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
+
 #main .container{
-    overflow: hidden;
+    overflow: none;
 }
 
 #main #home{
 height:100vh;
     width:100%;
     position:relative;
-background-color: #F7F5F4
+background-color: white
 }
 
 
@@ -123,7 +150,7 @@ background-color: #F7F5F4
         position:relative;
         top:21vh;
         font-size: 10vw;
-        font-family:'Open Sans';
+        font-family:'Jost';
         font-weight: normal;
         margin-right:0;
         cursor: default;
@@ -145,7 +172,7 @@ background-color: #F7F5F4
         position:relative;
         top:19vh;
         font-size: 3.5vw;
-        font-family:'Open Sans';
+        font-family:'Jost';
         font-weight: normal;
         margin-right:0;
         cursor: default;
@@ -171,12 +198,12 @@ top:20vh}}
 
 
 #intro{
-    background: #F7F5F4;
+    background: white;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height:100%;
+    height:100%
 }
 
 #main #intro{
@@ -185,18 +212,19 @@ top:20vh}}
 
 
 #second #intro{
-    background: "#F7F5F4";
+    background: white;
     transition: background .5s;
     font-size: 3.5vh;
-    font-family: 'Open Sans';
+    font-family: 'Jost';
     padding: 0% 15%;
     display:flex;
     flex-direction: row;
     height:100%;
 }
 
+
 #second #home{
-    background-color: #F7F5F4;
+    background-color: white;
 }
 
 #second #nav{
@@ -212,8 +240,7 @@ top:20vh}}
 }
 
 #second #hi{
-font-size: 6vh;
-font-weight: bold;
+font-size: 5vh;
 animation: fadeIn 1.5s;
 }
 
@@ -247,13 +274,13 @@ animation: fadeIn 1.5s;
 
 #second #introdiv{
     height:75%;
-    background: #F7F5F4;
+    background: white;
     transition: background .5s;
 
 }
 
 #second #intro2{
-    background: #F7F5F4;
+    background: white;
     height:300%;
     display:flex;
     align-items: center;
@@ -265,8 +292,8 @@ animation: fadeIn 1.5s;
 
 #second #intro2_text{
     padding: 0% 15%;
-    color: #F7F5F4;
-    font-family: 'Open Sans';
+    color: white;
+    font-family: 'Jost';
     font-size: 4.5vh;
     position: absolute;
     top:5%
@@ -285,10 +312,9 @@ animation: fadeIn 1.5s;
     }
 
     #second #intro{
-        background: #F7F5F4;
         transition: background .5s;
         font-size: 3.5vh;
-        font-family: 'Open Sans';
+        font-family: 'Jost';
         padding: 0% 15%;
         display:flex;
         flex-direction: column;
@@ -302,17 +328,10 @@ animation: fadeIn 1.5s;
         display:flex;
         align-items: center;
         order:2;
+
     }
     
-    #second #hi{
-    font-size: 5vh;
-    font-weight: bold;
-    }
-    
-    #second #hi2 {
-        font-size:3vh;
-    }
-    
+
     
     #second #intro_image{
         width: 75%;
@@ -334,8 +353,8 @@ animation: fadeIn 1.5s;
     }
     #second #intro2_text{
         padding: 0% 15%;
-        color: #F7F5F4;
-        font-family: 'Open Sans';
+        color: white;
+        font-family: 'Jost';
         font-size: 4vw;
         position: absolute;
         top:5%
@@ -347,31 +366,182 @@ animation: fadeIn 1.5s;
     
 }
 
-#third #intro{
-    background: #F7F5F4;
+
+#worktitle{
+    padding-bottom: 5%;
+    font-family: 'Jost';
+    font-size: 2vw;
+    text-align: center;
+}
+
+#workintro{
+    height:100%;
+    display:flex;
+    align-items: center;
+    transition: background .5s;
+text-align: center;
+}
+
+#workintro_soon{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost';
+}
+
+#workintro_text_title{
+    font-size: 5vw;
+    color:black;
+    animation: fadeIn 1.5s;
+}
+
+#workintro_text{
+    font-family: 'Jost';
+    font-size:1.15vw;
+    transition: opacity .5s;
+    padding-left: 31%;
+    padding-right: 31%;
+    padding-bottom: 5%;
+    animation: fadeIn 1.5s;
+
 }
 
 
-#third #intro{
-    cursor:default;
-margin:auto;
-display: flex;
-vertical-align: middle;
-color:#000000}
 
-#third #intro_text{
-    font-family:'Open Sans';
-    font-size: 4.5vh;
-    cursor:default;
-    text-align:center;
-color:#000000}
+#third #workintro2{
+    transition: background .5s
+}
 
-#fourth #intro_text{
-    font-family:'Open Sans';
-    font-size: 3.5vh;
+#third #workintro2{
+    font-family:'Jost';
+    display:display;
+    font-size: 1.5vw;
     cursor:default;
+    
+}
+
+.worklink{
+    color:black;
+}
+
+.space2{
+    height:10%;
+}
+
+#space23{
+    height:100%;
+    transition: background .5s;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+}
+
+#space23_image_container{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.space23_image{
+    display: flex;
+    object-fit: contain;
+    width:20%;
+    aspect-ratio: 1/1;
+}
+
+.space_23_pics{
+    border-radius: 20px;
+}
+
+
+#worktitle2{
+    color:white;
+    text-align: center;
+padding-bottom: 5%;
+font-family: 'Jost';
+font-size: 2vw;
+
+}
+
+
+#space3{
+        height:100%;
+        transition: background .5s;
+
+    }
+
+.works{
+    display:block;
+    width:40%;
+    aspect-ratio:100/45;
     text-align: left;
-color:#000000}
+
+
+}
+
+.worksdiv{
+    height:7.5%;
+    clear:both;
+}
+
+#p2{
+   float: right;
+}
+
+
+.head{
+    padding-top: 2%;
+
+}
+
+.head_title{
+    display:flex;
+
+}
+
+.arrow{
+    font-size: 2vw;
+    padding-left: 1%;
+    padding-top: 0%;
+
+}
+
+.head_desc{
+    color:rgb(177, 177, 177);
+    font-size: 1vw;
+
+}
+
+.pics{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 20px;
+                    }
+
+
+
+#space3{
+    display:flex;
+    justify-content: center;
+    height:100%;
+}
+
+#space3contents{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+
+#space3text{
+    color:black;
+    text-align: center;
+    font-family:'Jost';
+    font-size: 3vh;
+    display:flex;
+}
+
 
  @media screen and (orientation:portrait) { 
 
@@ -404,8 +574,8 @@ color:#000000}
 footer{
     width:100%;
     height: 25%;
-    overflow: hidden;
-    font-family:'Open Sans';
+    overflow: none;
+    font-family:'Jost';
     padding-bottom: 15%;
     padding-top: 5%;
     z-index: 999
@@ -416,7 +586,7 @@ footer{
 }
 
 #second footer{
-    background-color: #F7F5F4;
+    background-color: white;
     transition: background .5s;
 }
 
@@ -425,7 +595,7 @@ footer{
 }
 
 #fourth footer{
-    background-color: #F7F5F4;
+    background-color: white;
 }
 
 
@@ -433,11 +603,11 @@ footer p {font-size:1.25rem;
 }
 
 .ftext{
-    color: #F7F5F4;
+    color: white;
 }
 
 .ftext2{
-    color: #F7F5F4;
+    color: white;
     cursor:default
 }
 
@@ -458,7 +628,7 @@ padding-top: 3%;
 
 
 .aboutlink{
-color: #F7F5F4;
+color: white
 }
 
 .aboutlink2{
@@ -478,11 +648,99 @@ color: #F7F5F4;
 
 .hidden{
     opacity:0;
-    transition: 1.5s
+    transition: 1.25s;
+    transition-delay: .1s;
 }
+
+.hidden4{
+    opacity:0;
+    transition: .5s;
+    transition-delay: .1s;
+}
+
+
+#space23_image1.hidden3{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#space23_image2.hidden3{
+    transition: .5s;
+    transition-delay: .6s;
+}
+
+#space23_image3.hidden3{
+    transition: .5s;
+    transition-delay: .9s;
+}
+
+#space23_image4.hidden3{
+    transition: .5s;
+    transition-delay: 1.2s;
+}
+
+.hidden3{
+    opacity:0
+}
+
+.show3{
+    opacity:1
+}
+
+.show4{
+    opacity:1
+}
+.hidden2{
+    opacity:0;
+
+}
+
+
+@keyframes run {
+    0% {
+      transform: translateX(35%) ;
+    }
+    100% {
+      transform: translateX(40%) ;
+    }
+  }
+
+
 
 .show{
     opacity:1;
 }
+
+
+
+@keyframes run2 {
+    0% {
+      transform: translateX(-35%);
+    }
+    100% {
+      transform: translateX(-40%) ;
+    }
+  }
+
+.show2{
+    opacity:1;
+    animation: run .75s;
+    transition:1s;
+    transform: translateX(40%);
+    transition-delay: .2s;
+
+
+}
+
+  #p2.show2{
+    opacity:1;
+    transform:translate(-40%);
+    animation: run2 .75s;
+    transition:1s;
+    transition-delay: .2s;
+}
+
+
+
 
 

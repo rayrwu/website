@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>Raymond Wu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Hi there! I'm Raymond, a PhD student in Cognitive Science at the University of British Columbia.">
+    <meta name="keywords" content="Raymond Wu">
+</head>
+<body id = "third">
+
+  <div class="container" id = "secondtop">
+
+    <section id = "home">
+      <nav class = "nav">
+        <ul class = "navlist" id = "nav">
+          <li>
+            <p id = "navname"><a href = "https://raymondwu.ca/" >Ray Wu</a></p></li>
+            <li>
+              <a href = "work">Work</a></li>
+            <li><a href = "about">About</a></li>
+           <li><a href= "CV"
+            target="_blank" rel = "noreferrer noopener"
+            >CV</a></li>
+          
+        </ul>
+      </nav>
+
+  </section>
+ 
+
+  <section id = "workintro_soon">
+
+      <p id = "workintro_text_title">Coming Soon</p>
+
+
+
+  </section>
+
+
+
+        <footer>
+
+          <div id = "contact">
+            <p> <a href = "https://www.twitter.com/rayrwu" 
+              class = "ftext" style = "text-decoration: none" 
+              target="_blank" rel="noopener noreferrer">Twitter</a> <br>
+              
+  
+  
+           <a href = "https://www.linkedin.com/in/raywuu/" 
+           class = "ftext" style = "text-decoration: none"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
+  
+          <a href = "mailto:rwu@psych.ubc.ca"
+          class = "ftext" style = "text-decoration: none"
+          target="_blank" rel="noopener noreferrer">Email</a>
+           </p></div>
+
+         <div id = "address">
+          <p class = "ftext2">2136 West Mall</p>
+          <p class = "ftext2"> Vancouver, BC V6T 1Z4</p>
+          <p class = "ftext2">Canada</p>
+
+         </div>
+
+
+
+          </footer>
+
+
+    <script src = "animate.js"></script>
+
+    
+    <script>
+        function scrollToSection(event, sectionId) {
+          event.preventDefault();
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+
+<script>
+
+{
+  const nav = document.querySelector(".nav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("nav--hidden");
+    } else {
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+
+
+</script>
+
+</body>
+</html>
+

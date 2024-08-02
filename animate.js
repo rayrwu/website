@@ -35,10 +35,10 @@ const callback_about = (entries, observer) => {
 
     }
       else {
-    document.getElementById("intro").style.setProperty('background-color','#F7F5F4')
-    document.getElementById("introdiv").style.setProperty('background-color','#F7F5F4')
-    document.getElementById("intro2").style.setProperty('background-color','#F7F5F4')
-    document.getElementById("nav").style.setProperty('background-color','#F7F5F4')
+    document.getElementById("intro").style.setProperty('background-color','white')
+    document.getElementById("introdiv").style.setProperty('background-color','white')
+    document.getElementById("intro2").style.setProperty('background-color','white')
+    document.getElementById("nav").style.setProperty('background-color','white')
 
 
   }})}
@@ -51,6 +51,41 @@ changes_about.forEach(change => {
 })
 
 
+
+const callback_about2 = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      document.getElementById("workintro2").style.setProperty('background-color','black')
+      document.getElementById("space3").style.setProperty('background-color','black')
+      document.getElementById("space3text").style.setProperty('color','white')
+      document.getElementById("space23").style.setProperty('background-color','black')
+
+
+
+
+    }
+      else {
+
+
+    document.getElementById("workintro2").style.setProperty('background-color','white')
+    document.getElementById("space3").style.setProperty('background-color','white')
+    document.getElementById("space3text").style.setProperty('color','black')
+    document.getElementById("space23").style.setProperty('background-color','white')
+
+
+  }})}
+
+const changes_about2 = document.querySelectorAll("#space23")
+const observer_about2 = new IntersectionObserver(callback_about2, {threshold: 0})
+
+changes_about2.forEach(change => {
+  observer_about2.observe(change);
+})
+
+
+
+
 const observer_fade = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
 console.log(entry)
@@ -61,6 +96,48 @@ if (entry.isIntersecting) {
 }
 });
 });
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer_fade.observe(el))
+
+
+const observer_fade2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+console.log(entry)
+if (entry.isIntersecting) {
+  entry.target.classList.add('show2');
+} else {
+  entry.target.classList.remove('show2');
+}
+});
+});
+const hiddenElements2 = document.querySelectorAll('.hidden2');
+hiddenElements2.forEach((el) => observer_fade2.observe(el))
+
+
+
+const observer_fade3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+console.log(entry)
+if (entry.isIntersecting) {
+  entry.target.classList.add('show3');
+} else {
+  entry.target.classList.remove('dontremove');
+}
+});
+});
+const hiddenElements3 = document.querySelectorAll('.hidden3');
+hiddenElements3.forEach((el) => observer_fade3.observe(el))
+
+
+const observer_fade4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+console.log(entry)
+if (entry.isIntersecting) {
+  entry.target.classList.add('show4');
+} else {
+  entry.target.classList.remove('show4');
+}
+});
+});
+const hiddenElements4 = document.querySelectorAll('.hidden4');
+hiddenElements4.forEach((el) => observer_fade4.observe(el))
