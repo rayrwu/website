@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    -ms-overflow-style: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.infotext_box{
+    width:550px;
+}
+
+.infotext{
+    color:white;
+    font-size: 20px;
+    font-family: Jost;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.linkhome{
+    position:absolute;
+    height:100%;
+    width:100%;
+
+}
