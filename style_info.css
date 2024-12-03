@@ -19,6 +19,16 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+.back_arrow{
+    position:absolute;
+    padding-top: 48px;
+    left: 50%;  
+    transform: translateX(-50%) translateX(-230px); 
+    justify-content: left;
+    color:white;
+    font-size:23px;
+}
+
 
 .infotext_box{
     width:400px;
