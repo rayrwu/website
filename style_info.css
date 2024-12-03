@@ -21,12 +21,12 @@ body::-webkit-scrollbar {
 
 
 .infotext_box{
-    width:550px;
+    width:400px;
 }
 
 .infotext{
     color:white;
-    font-size: 20px;
+    font-size: 16x;
     font-family: Jost;
     padding-bottom: 50px;
     padding-top: 50px;
