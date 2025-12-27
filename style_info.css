@@ -51,6 +51,10 @@ body::-webkit-scrollbar {
 
 .newlink{
     position:relative;
-    color:blueviolet;
+    color:#A8CFFF;
     z-index: 999;
+}
+
+.newlink:hover{
+    color:#D0E4FF
 }
